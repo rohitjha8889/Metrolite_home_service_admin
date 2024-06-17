@@ -1,0 +1,108 @@
+.main{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main form{
+  /* border: 2px solid red; */
+  width: 90%;
+  margin-top: 20px;
+  background: white;
+  padding: 20px;
+}
+
+.main form> div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.main form div input, .main form div textarea{
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+
+.main img{
+    width: 210px;
+    height: 140px;
+}
+
+
+.categorySelect{
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
+
+}
+
+.categorySelect div label{
+    margin-right: 20px;
+}
+
+.categorySelect select{
+    padding: 5px 10px;
+}
+
+.categorySelect select::after{
+    padding: 20px;
+}
+
+.questionbox{
+    display: flex;
+    flex-direction: row !important;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.questionbox input{
+    width: 20px;
+    height: 20px;
+    padding: 20px;
+}
+
+.statusbox{
+    display: flex;
+    flex-direction: row !important;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.statusbox label{
+    margin-right: 20px;
+}
+
+.productImagesContainer{
+    display: flex;
+    flex-direction: row !important;
+    
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+}
+
+
+.imagePreview{
+    display: flex;
+    /* justify-content: space-between; */
+    flex-direction: column;
+    /* border: 2px solid red; */
+    justify-content: center;
+    align-items: center;
+}
+
+.imagePreview button{
+    margin-top: 10px;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    /* width: 80px; */
+
+}
+.addedImage{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

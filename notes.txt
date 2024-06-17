@@ -1,0 +1,24 @@
+
+Package .json 
+
+// "start": "PORT=3000 next start", -Local Server
+
+"start": "next start -p 80", - Vps Server
+
+
+next.config.mjs
+
+Local Server
+
+const nextConfig = {
+    images:{
+        remotePatterns:[
+            {
+                protocol:"http",
+                hostname:"**"
+            }
+        ]
+    }
+};
+
+VPS Server

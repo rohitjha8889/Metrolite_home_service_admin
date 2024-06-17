@@ -1,0 +1,254 @@
+/* .billMainBox{
+    border: 1px solid #000;
+    
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.pdfBox{
+    /* width: 576px; */
+    
+    border: 2px solid black;
+    margin: 20px;
+    width: 95%;
+    font-family: "Poppins", sans-serif;
+    page-break-inside: avoid; 
+    
+}
+
+
+
+
+.billHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.billHeader >div:nth-child(2){
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid green; */
+}
+
+
+.billHeader >div:nth-child(2) h2{
+    all: unset;
+    font-size: 16px;
+    text-decoration: underline;
+    font-weight: 700;
+    
+}
+
+.billHeader >div:nth-child(2) h1{
+    all: unset;
+    font-size: 28px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.billHeader >div:nth-child(2) span:nth-child(3){
+    width: 60%;
+    /* border: 2px solid red; */
+    text-align: center;
+    font-size: 15px;
+}
+.billHeader >div:nth-child(2) span:nth-child(4){
+    font-weight: 700;
+}
+
+.billDetails{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    
+}
+
+
+
+.billDetails >div{
+    width: 50%;
+    /* border-right: 2px solid black; */
+    padding: 10px;
+}
+.billDetails > div div{
+    display: flex;
+}
+
+
+
+.billDetails > div div div{
+    /* display: inline-block; */
+     /* Change display property */
+    width: 50%; /* Set width */
+    /* border: 2px solid green; */
+
+}
+
+/*  */
+
+.customerDetail{
+    border-bottom: 2px solid black ;
+    display: flex;
+}
+
+.customerDetail >div{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* border-right: 2px solid black; */
+    padding: 10px;
+}
+.customerDetail >div >div:first-child span{
+    font-weight: 700;
+    font-style: italic;
+}
+
+.customerDetail >div >div:last-child{
+    margin-top: 20px;
+}
+
+.productDetail {
+    /* min-height: 400px; Set a minimum height for the table container */
+    overflow: auto; /* Add overflow to enable scrolling if content exceeds the container height */
+}
+
+.productDetail table {
+    width: 100%;
+    border-collapse: collapse;
+    
+    /* border-bottom: 2px solid black; */
+}
+
+.productDetail table th,
+.productDetail table td {
+    padding: 8px;
+    text-align: left;
+    vertical-align: top; /* Align content vertically at the top */
+}
+
+.productDetail table td {
+    border: 1px solid black;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+}
+
+.productDetail table th {
+    border: 1px solid black;
+    border-top: none;
+    border-left: none;
+}
+
+.productDetail table tr:last-child td {
+    border-bottom: 2px solid black;
+    padding-bottom: 50px;
+}
+
+.productDetail table th:last-child {
+    border-right: none;
+}
+
+.productDetail table td:nth-child(2) {
+    width: 40%;
+}
+
+.productDetail table td:not(:nth-child(2)) {
+    width: auto;
+}
+.totalBox{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.totalBox div span:first-child{
+    margin-right: 20px;
+}
+
+.totalBox div span:nth-child(2){
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.taxDetail{
+    display: flex;
+    padding: 10px;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.taxDetail div{
+    display: flex;
+    flex-direction: column;
+}
+
+.taxDetail div span:first-child{
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.taxDetail div span:nth-child(2){
+    text-align: center;
+}
+
+.priceInWord{
+    padding: 10px;
+    border-bottom: 2px solid black;
+}
+
+.priceInWord span{
+    font-weight: 700;
+}
+
+.termsBox{
+    display: flex;
+    
+}
+
+.termsBox >div:first-child{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    font-size: 13px;
+    padding: 10px;
+    border-right: 1px solid black;
+}
+
+.termsBox >div:first-child span:first-child{
+    font-weight: 700;
+    font-size: 15px;
+}
+.termsBox >div:nth-child(2){
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.termsBox >div:nth-child(2) >div:first-child{
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+
+.termsBox >div:nth-child(2) >div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: end;
+    padding: 10px;
+}
+
+.termsBox >div:nth-child(2) >div:nth-child(2) span{
+    font-weight: 700;
+}
+
+.termsBox >div:nth-child(2) >div:nth-child(2) span:nth-child(2){
+    margin-top: 20px;
+}

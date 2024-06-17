@@ -1,0 +1,82 @@
+.main {
+    height: 100%;
+    background: #181D19;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+.menuBar {
+    display: flex;
+    justify-content: center;
+}
+
+.menuBar ul {
+    padding: 0;
+    margin-top: 0;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.menuBar ul li {
+    margin: 5px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.menuBar ul li:hover {
+    background: #343A46;
+}
+
+.menuBar ul li a {
+    text-decoration: none;
+    margin-left: 10px;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.subMenu {
+    position: relative; /* Change to relative positioning */
+    background: #181d19; /* Background color for submenu items */
+    color: white;
+    border-radius: 5px;
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); */
+    z-index: 1;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* border: 2px solid red; */
+    
+}
+
+.subMenu li {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-left: 20px!important;
+    /* border: 2px solid green; */
+}
+
+.subMenu li:hover {
+    background: #343a46;
+}
+
+.subMenu li a {
+    text-decoration: none;
+    /* margin-left: 10px; */
+    color: white;
+    font-size: 0.9rem !important;
+}

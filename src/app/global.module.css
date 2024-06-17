@@ -1,0 +1,21 @@
+.adminMain{
+    display: flex;
+    /* padding: 1%; */
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.sideNav{
+    width: 20%;
+    transition: width 0.5s ease;
+    /* border: 2px solid red; */
+}
+
+.pageContent{
+    width: 80%;
+    background: #F4F6F9;
+    transition: width 0.5s ease;
+    /* border: 2px solid green; */
+}

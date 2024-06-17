@@ -1,0 +1,25 @@
+.mainBox{
+    /* border: 2px solid red; */
+    border: 2px solid #e0e0e0;
+    margin: 20px;
+    min-height: 95vh;
+}
+
+.mainBox >div{
+    border-bottom: 2px solid #e0e0e0;
+    padding: 10px;
+    padding-left: 20px;
+    width: 97%;
+    overflow: hidden;
+   
+}
+
+.mainBox div:not(:nth-child(1)){
+    display: flex;
+}
+
+.mainBox div div{
+   /* border: 2px solid green; */
+   width: 45%;
+   
+}
