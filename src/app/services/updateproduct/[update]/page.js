@@ -86,13 +86,14 @@ const UpdateProduct = ({ params }) => {
         const {value} = e.target;
         setFormData({...formData, badge: value})
     }
-
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(formData);
-        modifyProduct(productId, formData)
-        router.push('/services')
-    };
+        modifyProduct(productId, formData).then(() => {
+          const categoryQuery = router.query && router.query.category ? `?category=${router.query.category}` : '';
+          router.push(`/services${categoryQuery}`);
+        });
+      };
 
 
     const handleImageChange = (e) => {

@@ -174,6 +174,13 @@ const Category = () => {
               </select>
 
 
+              <select value={categoryData.order} onChange={(e) => setCategoryData({ ...categoryData, order: e.target.value })}>
+        <option value="">Select Order</option>
+        {services.map((_, index) => (
+          <option key={index} value={index + 1}>{index + 1}</option>
+        ))}
+      </select>
+
               <button className="button primary" onClick={handleSaveCategoryChange}>Save Changes</button>
             </div>
           </div>

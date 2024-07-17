@@ -7,13 +7,22 @@ import styleComplaint from "../style/complaints.module.css";
 import { MdDelete } from "react-icons/md";
 import { FaEye } from "react-icons/fa";
 import { FaEdit } from "react-icons/fa";
+import { useRouter } from "next/navigation";
 
 const Services = () => {
+  const router = useRouter();
   const { allproducts, deleteProduct, apiUrl, services } = useContext(DataContext);
   const [currentPage, setCurrentPage] = useState(1);
   const [selectedCategory, setSelectedCategory] = useState("");
-
   const productsPerPage = 30;
+
+
+  useEffect(() => {
+    if (router.query && router.query.category) {
+      setSelectedCategory(router.query.category);
+    }
+  }, [router.query]);
+  
 
   // Filter products by selected category
   const filteredProducts = selectedCategory
@@ -33,8 +42,10 @@ const Services = () => {
 
   // Handle category change
   const handleCategoryChange = (event) => {
-    setSelectedCategory(event.target.value);
+    const newCategory = event.target.value;
+    setSelectedCategory(newCategory);
     setCurrentPage(1); // Reset to first page when category changes
+    router.push(`/services?category=${newCategory}`, undefined, { shallow: true });
   };
 
   const handleDelete = (id) => {
@@ -44,6 +55,8 @@ const Services = () => {
 //   useEffect (()=>{
 // console.log(allproducts)
 //   },[allproducts])
+
+
 
   return (
     <>

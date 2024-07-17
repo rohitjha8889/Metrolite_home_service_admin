@@ -2,16 +2,20 @@
     height: 100%;
     background: #181D19;
     color: white;
+    
 }
 
 .logo {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    
     align-items: center;
 }
 
 .logo img {
-    width: 150px;
+    margin-top: 10px;
+    margin-left: 40px;
+    width: 60px;
     height: auto;
 }
 
